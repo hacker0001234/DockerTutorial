@@ -23,6 +23,7 @@ spring.data.redis.port=6379
 
 
 потом конфігурацію
+
 @Configuration
 @EnableCaching
 public class CacheConfig {
