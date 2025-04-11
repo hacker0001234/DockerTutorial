@@ -26,7 +26,6 @@ spring.data.redis.port=6379
 @Configuration
 @EnableCaching
 public class CacheConfig {
-
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory redisConnectionFactory) {
         Jackson2JsonRedisSerializer<Object> serializer = new Jackson2JsonRedisSerializer<>(Object.class);
